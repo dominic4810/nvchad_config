@@ -22,7 +22,8 @@ local options = {
       select = false,
     },
     ["<CR>"] = {},
-  }
+  },
+  snippet = nil,
 }
 
 return options
