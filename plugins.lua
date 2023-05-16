@@ -80,6 +80,13 @@ local plugins = {
       require("hop").setup()
     end
   },
+  {
+    "simrat39/symbols-outline.nvim",
+    lazy = false,
+    config = function()
+      require("symbols-outline").setup()
+    end
+  },
 }
 
 return plugins

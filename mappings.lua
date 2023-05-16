@@ -17,42 +17,42 @@ M.hop = {
       function()
         require('hop').hint_words({require('hop.hint').HintDirection.AFTER_CUROSR, current_line_only = false})
       end,
-      ""},
+      "Hop by word, forwards"},
     ["<leader><leader>W"] = {
       function()
         require('hop').hint_words({require('hop.hint').HintDirection.BEFORE_CURSOR, current_line_only = false})
       end,
-      "require('hop') by word"},
+      "Hop by word, backwards"},
     ["<leader><leader>l"] = {
       function()
         require('hop').hint_lines({require('hop.hint').HintDirection.AFTER_CUROSR, current_line_only = false})
       end,
-      "require('hop') by line"},
+      "Hop by line, forwards"},
     ["<leader><leader>L"] = {
       function()
         require('hop').hint_lines({require('hop.hint').HintDirection.BEFORE_CURSOR, current_line_only = false})
       end,
-      "require('hop') by line"},
+      "Hop by line, backwards"},
     ["<leader><leader>c"] = {
       function()
         require('hop').hint_char1({require('hop.hint').HintDirection.AFTER_CUROSR, current_line_only = false})
       end,
-      "require('hop') by char 1"},
+      "Hop by char forwards"},
     ["<leader><leader>C"] = {
       function()
         require('hop').hint_char2({require('hop.hint').HintDirection.AFTER_CUROSR, current_line_only = false})
       end,
-      "require('hop') by char 2"},
+      "Hop by char backwards"},
     ["<leader><leader>p"] = {
       function()
         require('hop').hint_patterns({require('hop.hint').HintDirection.AFTER_CUROSR, current_line_only = false})
       end,
-      "require('hop') by pattern"},
+      "Hop by pattern, forwards"},
     ["<leader><leader>P"] = {
       function()
         require('hop').hint_patterns({require('hop.hint').HintDirection.BEFORE_CURSOR, current_line_only = false})
       end,
-      "require('hop') by pattern"},
+      "Hop by pattern, backwards"},
   },
   v = {
     ["<leader><leader>w"] = {
@@ -96,6 +96,20 @@ M.hop = {
       end,
       "require('hop') by pattern"},
   },
+}
+
+-- symbols mapping
+M.symbols = {
+  n = {
+    ["<leader>s"] = {"<cmd>SymbolsOutline<cr>", "Symbols Outline"},
+  }
+}
+
+-- folding
+M.folding = {
+  n = {
+    ["f"] = {"za", "Toggle fold"},
+  }
 }
 
 

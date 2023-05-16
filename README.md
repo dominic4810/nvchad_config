@@ -16,7 +16,7 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 ## Add custom plugins
 ```
 cd .config/nvim
-git submodule add -f git@github.com:dominic4810/nvchad_config.git lua/config
+git submodule add -f git@github.com:dominic4810/nvchad_config.git lua/custom
 ```
 
 ## Setup github-copilot
