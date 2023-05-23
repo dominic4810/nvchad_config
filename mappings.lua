@@ -109,6 +109,7 @@ M.symbols = {
 M.folding = {
   n = {
     ["f"] = {"za", "Toggle fold"},
+    ["F"] = {"zA", "Toggle all fold"},
   }
 }
 
