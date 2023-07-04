@@ -87,6 +87,14 @@ local plugins = {
       require("symbols-outline").setup()
     end
   },
+  -- marks
+  {
+    "chentoast/marks.nvim",
+    lazy=false,
+    config = function()
+      require("marks").setup()
+    end
+  }
 }
 
 return plugins
