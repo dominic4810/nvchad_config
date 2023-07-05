@@ -43,7 +43,6 @@ local plugins = {
         "cpplint",
         "clang-format",
         "cmake-language-server",
-        "cmakelint",
         "cmakelang"
       }
     }
@@ -94,6 +93,7 @@ local plugins = {
     lazy = false,
     config = function()
       require("symbols-outline").setup()
+      require "custom.configs.symbols-outline"
     end
   },
   -- marks

@@ -13,8 +13,8 @@ local sources = {
   formatting.black,
   -- lint.cpplint,
   formatting.clang_format,
-  lint.cmakelint,
-  -- formatting.cmakelang,
+  lint.cmake_lint,
+  formatting.cmake_format,
 }
 
 local on_attach = function(client, bufnr)
