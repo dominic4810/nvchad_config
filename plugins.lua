@@ -9,7 +9,9 @@ local plugins = {
         "python",
         "json",
         "yaml",
-        "dockerfile"
+        "dockerfile",
+        "cpp",
+        "cmake",
       },
     },
   },
@@ -36,6 +38,13 @@ local plugins = {
         "pylint",
         "isort",
         "bash-language-server",
+        "lua-language-server",
+        "clangd",
+        "cpplint",
+        "clang-format",
+        "cmake-language-server",
+        "cmakelint",
+        "cmakelang"
       }
     }
   },

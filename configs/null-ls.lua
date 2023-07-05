@@ -10,7 +10,11 @@ local pylint_options = {
 local sources = {
   lint.pylint.with(pylint_options),
   formatting.isort,
-  formatting.black
+  formatting.black,
+  -- lint.cpplint,
+  formatting.clang_format,
+  lint.cmakelint,
+  -- formatting.cmakelang,
 }
 
 local on_attach = function(client, bufnr)
