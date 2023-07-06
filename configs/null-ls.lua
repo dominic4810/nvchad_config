@@ -12,7 +12,7 @@ local sources = {
   formatting.isort,
   formatting.black,
   -- lint.cpplint,
-  formatting.clang_format,
+  -- formatting.clang_format,
   lint.cmake_lint,
   formatting.cmake_format,
 }
