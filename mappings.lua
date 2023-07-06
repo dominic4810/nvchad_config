@@ -110,6 +110,9 @@ M.folding = {
   n = {
     ["f"] = {"za", "Toggle fold"},
     ["F"] = {"zA", "Toggle all fold"},
+    ["<leader>o"] = {"zM", "Close all fold"},
+    ["<leader>O"] = {"zR", "Open all fold"},
+
   }
 }
 
