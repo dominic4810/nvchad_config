@@ -6,6 +6,6 @@ vim.opt.colorcolumn = "80,120"
 vim.cmd([[
   augroup unfold_folds
     autocmd!
-    autocmd BufWinEnter * normal! zR
+    autocmd BufAdd * normal! zR
   augroup END
 ]])
