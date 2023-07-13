@@ -116,5 +116,14 @@ M.folding = {
   }
 }
 
+-- wraping
+M.wrap = {
+  n = {
+    ["<leader>wy"] = {"<cmd>:set wrap<cr>", "Enable wrap"},
+    ["<leader>wn"] = {"<cmd>:set nowrap<cr>", "Disable wrap"},
+
+  }
+}
+
 
 return M
