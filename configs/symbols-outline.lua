@@ -2,7 +2,7 @@ local opts = {
   symbols = {
     File = { icon = "", hl = "@text.uri" },
     Module = { icon = "", hl = "@namespace" },
-    Namespace = { icon = "", hl = "@namespace" },
+    Namespace = { icon = "", hl = "@namespace" },
     Package = { icon = "", hl = "@namespace" },
     Class = { icon = "𝓒", hl = "@type" },
     Method = { icon = "ƒ", hl = "@method" },
