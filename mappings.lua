@@ -121,7 +121,22 @@ M.wrap = {
   n = {
     ["<leader>wy"] = {"<cmd>:set wrap<cr>", "Enable wrap"},
     ["<leader>wn"] = {"<cmd>:set nowrap<cr>", "Disable wrap"},
+  }
+}
 
+-- moving tabs
+M.tabs = {
+  n = {
+    ["<leader>mh"] = {
+      function ()
+        require("nvchad_ui.tabufline").move_buf(-1)
+      end
+      , "Move tab left"},
+    ["<leader>ml"] = {
+      function ()
+        require("nvchad_ui.tabufline").move_buf(1)
+      end
+      , "Move tab right"},
   }
 }
 
