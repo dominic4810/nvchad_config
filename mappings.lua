@@ -1,15 +1,5 @@
 local M = {}
 
--- resize window
-M.general = {
-  n = {
-    ["<C-S-Left>"] = {"<C-w><", "Resize split to left"},
-    ["<C-S-Right>"] = {"<C-w>>", "Resize split to down"},
-    ["<C-S-Up>"] = {"<C-w>+", "Resize split to up"},
-    ["<C-S-Down>"] = {"<C-w>-", "Resize split to right"},
-  }
-}
-
 -- hop mapping
 M.hop = {
   n = {
@@ -130,13 +120,19 @@ M.tabs = {
     ["<leader>mh"] = {
       function ()
         require("nvchad_ui.tabufline").move_buf(-1)
-      end
-      , "Move tab left"},
+      end,
+      "Move buffer left"
+    },
     ["<leader>ml"] = {
       function ()
         require("nvchad_ui.tabufline").move_buf(1)
-      end
-      , "Move tab right"},
+      end,
+      "Move buffer right"
+    },
+    ["<leader>ma"] = {"<cmd>:tabnew<cr>", "Add tab"},
+    ["<leader>md"] = {"<cmd>:tabclose<cr>", "Close tab"},
+    ["<leader>mk"] = {"<cmd>:tabn<cr>", "Next tab"},
+    ["<leader>mj"] = {"<cmd>:tabp<cr>", "Prev tab"},
   }
 }
 

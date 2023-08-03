@@ -9,4 +9,6 @@ options.hijack_netrw = true
 
 options.renderer.icons.glyphs.folder.default = ""
 
+options.view.adaptive_size = true
+
 return options

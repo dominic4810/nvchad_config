@@ -1,7 +1,7 @@
 ---@type ChadrcConfig 
  local M = {}
  M.ui = {
-  theme = 'doomchad',
+  theme = 'onedark',
   statusline = {
     theme = "vscode_colored", -- default/vscode/vscode_colored/minimal
   }
