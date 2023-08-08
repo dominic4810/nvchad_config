@@ -136,5 +136,13 @@ M.tabs = {
   }
 }
 
+-- ChatGPT
+M.ChatGPT = {
+  n = {
+    ["<leader>cg"] = {"<cmd>:ChatGPT<cr>", "ChatGPT"},
+    ["<leader>ce"] = {"<cmd>:ChatGPTEditWithInstructions<cr>", "ChatGPT Edit with Instructions"},
+  }
+}
+
 
 return M

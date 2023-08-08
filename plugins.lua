@@ -19,15 +19,15 @@ local plugins = {
   {
     "neovim/nvim-lspconfig",
     dependencies = {
-       "jose-elias-alvarez/null-ls.nvim",
-       config = function()
-         require "custom.configs.null-ls"
-       end,
-     },
-    config = function ()
+      "jose-elias-alvarez/null-ls.nvim",
+      config = function()
+        require "custom.configs.null-ls"
+      end,
+    },
+    config = function()
       require "plugins.configs.lspconfig"
       require "custom.configs.lspconfig"
-    end
+    end,
   },
   {
     "williamboman/mason.nvim",
@@ -39,25 +39,26 @@ local plugins = {
         "isort",
         "bash-language-server",
         "lua-language-server",
+        "stylua",
         "clangd",
         "cpplint",
         "clang-format",
         "cmake-language-server",
-        "cmakelang"
-      }
-    }
+        "cmakelang",
+      },
+    },
   },
   -- file explorer
   {
     "nvim-tree/nvim-tree.lua",
-    opts = function ()
+    opts = function()
       return require "custom.configs.nvimtree"
-    end
+    end,
   },
   -- Github Copilot
   {
     "github/copilot.vim",
-    lazy = false
+    lazy = false,
   },
   -- cmp with copilot
   {
@@ -75,10 +76,10 @@ local plugins = {
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
     config = function()
-        require("nvim-surround").setup({
-            -- Configuration here, or leave empty to use defaults
-        })
-    end
+      require("nvim-surround").setup {
+        -- Configuration here, or leave empty to use defaults
+      }
+    end,
   },
   -- hop
   {
@@ -86,7 +87,7 @@ local plugins = {
     lazy = false,
     config = function()
       require("hop").setup()
-    end
+    end,
   },
   {
     "simrat39/symbols-outline.nvim",
@@ -94,16 +95,29 @@ local plugins = {
     config = function()
       require("symbols-outline").setup()
       require "custom.configs.symbols-outline"
-    end
+    end,
   },
   -- marks
   {
     "chentoast/marks.nvim",
-    lazy=false,
+    lazy = false,
     config = function()
       require("marks").setup()
-    end
-  }
+    end,
+  },
+  -- ChatGPT
+  {
+    "jackMort/ChatGPT.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("chatgpt").setup(require("custom.configs.chatgpt"))
+    end,
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+  },
 }
 
 return plugins

@@ -15,6 +15,7 @@ local sources = {
   formatting.clang_format,
   lint.cmake_lint,
   formatting.cmake_format,
+  formatting.stylua
 }
 
 local on_attach = function(client, bufnr)
