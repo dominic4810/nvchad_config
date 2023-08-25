@@ -89,6 +89,15 @@ local plugins = {
       require("hop").setup()
     end,
   },
+  -- leap
+  {
+    "ggandor/leap.nvim",
+    lazy = false,
+    config = function()
+      require("leap").add_default_mappings()
+    end,
+  },
+  -- symbols
   {
     "simrat39/symbols-outline.nvim",
     lazy = false,
