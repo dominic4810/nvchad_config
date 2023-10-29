@@ -11,7 +11,6 @@ local sources = {
   lint.pylint.with(pylint_options),
   formatting.isort,
   formatting.black,
-  -- lint.cpplint,
   formatting.clang_format,
   lint.cmake_lint,
   formatting.cmake_format,
