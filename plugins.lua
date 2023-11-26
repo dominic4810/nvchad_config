@@ -34,9 +34,6 @@ local plugins = {
     opts = {
       ensure_installed = {
         "jedi-language-server",
-        "black",
-        "pylint",
-        "isort",
         "bash-language-server",
         "lua-language-server",
         "stylua",

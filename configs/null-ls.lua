@@ -10,7 +10,7 @@ local pylint_options = {
 local sources = {
   lint.pylint.with(pylint_options),
   formatting.isort,
-  formatting.black,
+  formatting.yapf,
   formatting.clang_format,
   lint.cmake_lint,
   formatting.cmake_format,

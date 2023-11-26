@@ -8,7 +8,10 @@ local lspconfig = require "lspconfig"
 
 -- python lsp
 lspconfig["jedi_language_server"].setup({
-  on_attach = on_attach,
+  on_attach = function (client, bufnr)
+    vim.opt.shiftwidth = 2
+    on_attach(client, bufnr)
+  end,
   capabilities = capabilities,
 })
 
